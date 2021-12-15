@@ -8,6 +8,6 @@ class HelloController extends Controller
 {
     public function index()
     {
-        config('app.timezone', 'American');
+       return app()->getLocale();
     }
 }
